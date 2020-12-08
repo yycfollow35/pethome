@@ -8,12 +8,14 @@
 				<text style="font-weight: 600;">登录/注册</text>
 			</view>
 		</view>
+		<view class="featureWrapper">
 		<view class="features">
 			<featureTemp class="featureTemp" src="../../static/img/adopt.png" text="我的领养"></featureTemp>
 			<featureTemp class="featureTemp" src="../../static/img/give.png" text="我的送养"></featureTemp>
 			<featureTemp class="featureTemp" src="../../static/img/collection.png" text="我的收藏"></featureTemp>
 			<featureTemp class="featureTemp" src="../../static/img/message.png" text="基本资料"></featureTemp>
 			<featureTemp class="featureTemp" src="../../static/img/authenticate.png" text="实名认证"></featureTemp>
+		</view>
 		</view>
 		<view class="occupy">
 			<view class="description">
@@ -34,13 +36,18 @@
 </script>
 
 <style scoped>
+	uni-page-body{
+		height: 100%;
+	}
 	.container {
 		width:100%;
 		height: 100%;
+		/* height:calc(100vh - 10px); */
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
+		/* justify-content: center; */
 		align-items: center;
+		background-color: #f1f1f1;
 	}
 	.loginWrapper{
 		width:100%;
@@ -50,7 +57,7 @@
 		align-items: center;
 		/* margin-top: 50px; */
 		padding-top: 50px;
-		height: 300rpx;
+		height: 400rpx;
 		background-color: #f46b31;
 		/* margin-right: 50px; */
 	}
@@ -80,13 +87,18 @@
 		padding: 10px 0;
 		border-bottom: 0.5px solid #e6e6e6;
 	}
+	.featureWrapper{
+		width: 100%;
+		background-color: #ffffff;
+		display: flex;
+		justify-content: center;
+	}
 	.features{
 		width:90%;
 		/* margin-top: 30px; */
 	}
 	.occupy{
 		width: 100%;
-		height: 1000px;
 		background-color: #f1f1f1;
 		display: flex;
 		flex-direction: column;
@@ -94,7 +106,7 @@
 	}
 	.description{
 		/* width: 60%; */
-		margin-top: 30px; 
+		margin-top: 10px; 
 		/* font-size: 15px; */
 	}
 </style>
