@@ -6,7 +6,11 @@ import discount from './pages/commen/discount'
 import recommend from './pages/commen/recommend'
 import messageTemp from './pages/commen/messageTemp'
 import featureTemp from './pages/commen/featureTemp'
+import uView from "uview-ui";
 import "./iconfont.css"
+
+// Vue.use(Vant);
+Vue.use(uView);
 
 Vue.component('icon-svg', IconSvg)
 Vue.component('discount', discount)

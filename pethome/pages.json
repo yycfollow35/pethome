@@ -2,19 +2,52 @@
 	"pages": [{
 		"path": "pages/home/Home",
 		"style": {
-			"navigationBarTitleText": "首页"
+			"navigationStyle": "custom"
 		}
 	},
 	{
 		"path": "pages/message/Message",
 		"style": {
-			"navigationBarTitleText": "消息"
+			"navigationStyle": "custom"
 		}
 	},
 	{
 		"path": "pages/profile/Profile",
 		"style": {
-			"navigationBarTitleText": "我的"
+			"navigationStyle": "custom"
+		}
+	},
+	{
+		"path": "pages/home/Near",
+		"style": {
+			"navigationStyle": "custom"
+		}
+	},
+	{
+		"path": "pages/home/Cat",
+		"style": {
+			"navigationStyle": "custom"
+		}
+	},
+	{
+		"path": "pages/home/Dog",
+		"style": {
+			"navigationStyle": "custom"
+		}
+	},
+	// {
+	// 	"path": "pages/home/Dog",
+	// 	"style": {
+	// 		"navigationStyle": "custom"
+	// 	}
+	// },
+	{
+		"path": "pages/home/PetDetail",
+		"style": {
+			"navigationStyle": "custom",
+			"app-plus":{
+			   "scrollIndicator":"none"
+			}
 		}
 	}
 	],
@@ -22,11 +55,15 @@
 		"navigationBarTextStyle": "white",
 		"navigationBarTitleText": "uni-app",
 		"navigationBarBackgroundColor": "#007AFF",
-		"backgroundColor": "#FFFFFF"
+		"backgroundColor": "#FFFFFF",
+		"webviewParameter": {
+		            "scrollIndicator" : "none"
+		},
+		"rpxCalcIncludeWidth":750
 	},
 	"tabBar": {
 	    "color": "#7A7E83",
-	    "selectedColor": "#3cc51f",
+	    "selectedColor": "#fc0678",
 	    "borderStyle": "black",
 	    "backgroundColor": "#ffffff",
 	    "list": [{
@@ -46,5 +83,8 @@
 	        "text": "我的"
 	    }
 			]
+	},
+	"easycom": {
+			"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
 	}
 }

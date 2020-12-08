@@ -1,0 +1,1 @@
+<view class="wrapper data-v-651b42c1"><view class="icon data-v-651b42c1"><slot></slot></view><view class="text data-v-651b42c1">{{text}}</view></view>

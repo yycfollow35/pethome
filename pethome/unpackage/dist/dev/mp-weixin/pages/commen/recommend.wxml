@@ -1,0 +1,1 @@
+<view style="width:100%;"><image style="width:100%;height:175px;" src="{{src}}" data-event-opts="{{[['error',[['imageError',['$event']]]]]}}" binderror="__e"></image><view class="wrapper"><text class="type">{{type}}</text><text class="price">{{price}}</text></view></view>

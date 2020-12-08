@@ -1,22 +1,25 @@
 <template>
+	<view>
 	<view class="wrapper">
 		<!-- <view class="msgWrapper"> -->
 			<view class="icon">
-				<i class="iconfont">&#xe7b3;</i>
+				<image class="img" :src="src" @error="imageError"></image>
 			</view>
 			<view class="contentWrapper">
-				<text class="title">收藏</text>
+				<text class="title">{{text}}</text>
 			</view>
 			<view class="button">
-				<i class="iconfont">&#xe602;</i>
+				<i class="iconfont">&#xe600;</i>
 			</view>
 		<!-- </view> -->
+	</view>
 	</view>
 </template>
 
 <script>
 	export default {
 	name: 'featureTemp',
+	props:["text","src"]
 	}
 </script>
 
@@ -32,8 +35,12 @@
 		display: flex;
 		align-items: center;
 	}
+	.img{
+		width: 20px;
+		height: 20px;
+	}
 	.iconfont{
-		font-size: 25px;
+		font-size: 15px;
   }
 	.contentWrapper{
 		float: left;

@@ -1,6 +1,6 @@
 <template>
 	<view style="">
-		<image style="width:115px; height:110px;" :src="src" @error="imageError"></image>
+		<image style="width:115px; height:110px;" @click="onClick" :src="src" @error="imageError"></image>
 		<view class="type">{{type}}</view>
 		<view style="width:115px">
 			<view class="bottom">
@@ -15,14 +15,16 @@
 <script>
 	export default {
 		name:"count",
-		props:["type","text1","text2","text3","src"],
+		props:["type","text1","text2","text3","src","click"],
 		data() {
 			return {
 				
 			}
 		},
 		methods: {
-			
+			onClick(){
+				this.click()
+			}
 		}
 	}
 </script>

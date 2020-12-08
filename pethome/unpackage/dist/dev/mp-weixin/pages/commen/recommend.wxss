@@ -1,0 +1,19 @@
+
+.wrapper{
+	font-size: 13px;
+	margin-top: 8px;
+	position: relative;
+	height: 20px;
+}
+.type{
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.price{
+	color: tomato;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+

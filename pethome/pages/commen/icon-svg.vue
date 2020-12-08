@@ -20,13 +20,10 @@ export default {
   //   }
   // },
 	created(){
-		console.log("1234567890",this.iconClass,this.text)
 	},
 	onShow(){
-		console.log("1234567890",this.iconClass,this.text)
 	},
 	onLoad(){
-		console.log("1234567890",this.iconClass,this.text)
 	}
 }
 </script>

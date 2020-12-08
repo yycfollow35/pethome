@@ -10,7 +10,7 @@
 
 <script>
 	export default {
-		name:"count",
+		name:"recommend",
 		props:["type","price","src"],
 		data() {
 			return {
